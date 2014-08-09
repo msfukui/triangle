@@ -1,5 +1,6 @@
 class Triangle
   def initialize( x, y, z )
+    raise ArgumentError unless x.is_a?(Integer) && y.is_a?(Integer) && z.is_a?(Integer)
     @x, @y, @z = x, y, z
   end
 
